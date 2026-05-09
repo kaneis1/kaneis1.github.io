@@ -31,6 +31,7 @@
         </p>
         <div class="contact-row" aria-label="Contact links">
           <a href="mailto:zcui54@emory.edu">zcui54@emory.edu</a>
+          <a href="tel:+14704764626">+1 (470) 476-4626</a>
           <span>Atlanta, GA</span>
           <a href="https://github.com/kaneis1">github.com/kaneis1</a>
         </div>
@@ -63,14 +64,14 @@
       </div>
       <div class="timeline">
         <article class="entry">
-          <div class="entry-meta">Atlanta, GA · 08/2024 - 05/2026</div>
+          <div class="entry-meta">Atlanta, GA | 08/2024 - 05/2026</div>
           <h3>Emory University</h3>
           <p>M.S. in Computer Science</p>
           <p>GPA: 3.64 / 4.0</p>
-          <p class="muted">Relevant coursework: Machine Learning, Natural Language Processing, Artificial Intelligence, Computer Vision, Spatial Computing, Deep Learning on Graphs, Algorithms, Python Programming, Data Mining.</p>
+          <p class="muted">Relevant coursework: Machine Learning (A), Natural Language Processing (A), Artificial Intelligence (A), Computer Vision (A), Spatial Computing (A), Deep Learning on Graphs (A-), Algorithms (A-), Python Programming (A-), Data Mining (B+).</p>
         </article>
         <article class="entry">
-          <div class="entry-meta">Shanghai · 08/2020 - 06/2024</div>
+          <div class="entry-meta">Shanghai | 08/2020 - 06/2024</div>
           <h3>University of Shanghai for Science &amp; Technology</h3>
           <p>B.S. in Computer Science</p>
           <p>GPA: 3.52 / 4.0 (86.69 / 100)</p>
@@ -97,34 +98,39 @@
       <div class="project-grid">
         <article class="project-card">
           <div class="entry-meta">11/2025 - 05/2026</div>
-          <h3>Bayesian Belief Distillation for Negotiation Agents</h3>
-          <p class="muted">Bytes of Minds Lab, Icahn School of Medicine at Mount Sinai · Advisor: Prof. Baihan Lin</p>
+          <h3>Research Assistant - Bayesian Belief Distillation for Negotiation Agents</h3>
+          <p class="muted">First-author research | Bytes of Minds Lab, Icahn School of Medicine at Mount Sinai | Advisor: Prof. Baihan Lin | NeurIPS 2026 submission, under review</p>
           <ul>
-            <li>Designed a language-as-likelihood, Bayes-as-update framework for calibrated turn-level posteriors over hidden preferences in CaSiNo negotiation dialogues.</li>
-            <li>Distilled a Llama-3.3-70B Bayesian teacher into a Llama-3.1-8B LoRA student with auditable posterior, intent, content, and utterance outputs.</li>
-            <li>Established a same-scale supervised baseline exceeding prior CaSiNo SOTA under matched 5-fold cross validation.</li>
+            <li>Designed a language-as-likelihood, Bayes-as-update framework in which a Llama-3.3-70B teacher scores dialogue compatibility against six opponent priority orderings to produce calibrated, turn-level posteriors over hidden preferences in CaSiNo campsite negotiation.</li>
+            <li>Distilled the Bayesian teacher into a Llama-3.1-8B student via LoRA SFT; the student emits auditable tagged outputs for posterior, intent, content, and utterance while preserving belief calibration on 1,054 held-out turns.</li>
+            <li>Established a same-scale supervised baseline that exceeds prior CaSiNo SOTA under matched 5-fold cross validation.</li>
+            <li>Diagnosed pre-registered null results, including SVO swap-test insensitivity within fixed lambda regimes and Big Five style-gate failure, separating lambda-scale effects from social-label assignment effects.</li>
+            <li>Built belief-policy decomposition, posterior-trajectory visualizations, and posterior-prefix interventions to make weak belief-action coupling visible.</li>
+            <li>Stack: Llama-3.1 / 3.3, LoRA and QLoRA via TRL, PyTorch, HPC with LSF on Arion / Minerva, A100 / H100.</li>
           </ul>
         </article>
 
         <article class="project-card">
           <div class="entry-meta">02/2026 - 05/2026</div>
           <h3>Drug Efficacy Modeling and LLM-Based Explainability</h3>
-          <p class="muted">Industry-supervised research · SK Life Science</p>
+          <p class="muted">Industry-supervised research | SK Life Science</p>
           <ul>
-            <li>Extended a Drug Efficacy Model on 311K drug-cell-line pairs across 2,024 multi-omic features.</li>
-            <li>Engineered a Random Forest leaf-agreement perturbation kernel for drug-tumor similarity modeling.</li>
-            <li>Built a SHAP-to-LLM explainer that maps biomedical features to grounded natural-language IC50 explanations.</li>
+            <li>Reproduced and extended a Data-driven Explanatory Model using Random Forest on 311K drug-cell-line pairs across 2,024 multi-omic features from CTRP, CCLE, and PubChem; achieved R2 about 0.66 and Pearson r about 0.82 on held-out CTRP data.</li>
+            <li>Engineered a custom perturbation kernel based on Random Forest leaf-agreement with weighted tree logic and depth-aware scaling to model drug-tumor similarity for downstream treatment-response inference.</li>
+            <li>Built an end-to-end SHAP-to-LLM explainer that extracts TreeSHAP attributions, maps features to biomedical metadata, and assembles structured prompts for grounded natural-language explanations of IC50 predictions.</li>
+            <li>Benchmarked Llama 3.1 8B, Qwen 2.5 32B, BioMistral 7B, and Meditron 7B on explanation quality; designed a QLoRA fine-tuning pipeline targeting H100 GPUs with GGUF export for local inference.</li>
+            <li>Co-designed a blinded expert-evaluation framework using stratified drug-cell pairs and forced-choice paired comparison across full-feature, SHAP-only, shuffled-SHAP, and wrong-drug explanation variants.</li>
           </ul>
         </article>
 
         <article class="project-card">
           <div class="entry-meta">09/2025 - 12/2025</div>
-          <h3>Modeling Human Strategic Behavior with Decision Transformers</h3>
-          <p class="muted">Bytes of Minds Lab, Icahn School of Medicine at Mount Sinai · Advisor: Prof. Baihan Lin</p>
+          <h3>Research Assistant - Modeling Human Strategic Behavior with Decision Transformers</h3>
+          <p class="muted">Bytes of Minds Lab, Icahn School of Medicine at Mount Sinai | Advisor: Prof. Baihan Lin</p>
           <ul>
-            <li>Applied a Decision Transformer to predict cooperation behavior in the Iterated Prisoner's Dilemma.</li>
-            <li>Designed state-action-return representations and evaluated against Transformer and BERT baselines.</li>
-            <li>Used SHAP to interpret learned policies and identify dominant drivers of cooperation.</li>
+            <li>Applied a Decision Transformer, a GPT-style sequence model with reward-conditioned trajectories, to predict human cooperation behavior in the Iterated Prisoner's Dilemma.</li>
+            <li>Designed state-action-return representations and return-to-go conditioning, evaluated against Transformer and BERT baselines on action-prediction accuracy, cooperation-rate trajectories, and behavioral consistency.</li>
+            <li>Applied SHAP to interpret learned policies; identified return-to-go and recent-opponent-action features as dominant drivers of cooperation. Code: <a href="https://github.com/kaneis1/decision">github.com/kaneis1/decision</a>.</li>
           </ul>
         </article>
 
@@ -133,30 +139,30 @@
           <h3>Graph-Augmented Multimodal Representation Learning with CLIP</h3>
           <p class="muted">Independent research</p>
           <ul>
-            <li>Built a relation-guided contrastive model combining CLIP features with graph neural networks.</li>
-            <li>Designed cross-modal and inter-node objectives for zero-shot node classification and link prediction.</li>
-            <li>Improved Hit@5 by about 30% over CLIP, DeCLIP, UniCL, SigLIP, and ImageBind baselines.</li>
+            <li>Developed a relation-guided contrastive learning model combining CLIP feature extraction with graph neural networks to align image and text embeddings in a multimodal product graph built from Amazon co-purchase data.</li>
+            <li>Designed cross-modal and inter-node contrastive objectives leveraging edge semantics for zero-shot node classification and link prediction.</li>
+            <li>Outperformed CLIP, DeCLIP, UniCL, SigLIP, and ImageBind baselines, with a +30% average improvement in Hit@5. Stack: PyTorch, HuggingFace Transformers, NetworkX, CUDA.</li>
           </ul>
         </article>
 
         <article class="project-card">
           <div class="entry-meta">02/2025 - 04/2025</div>
           <h3>Detecting Mild Cognitive Impairment from Verbal Fluency</h3>
-          <p class="muted">Collaborative research</p>
+          <p class="muted">Collaborative research - language as a window into latent cognitive state</p>
           <ul>
-            <li>Analyzed 650+ transcribed B-SHARP audio samples across verbal fluency tasks.</li>
-            <li>Combined classical lexical features with LLM-derived semantic features and statistical testing.</li>
-            <li>Integrated Whisper v3, HuggingFace Transformers, GPT-4o, and scikit-learn into a unified pipeline.</li>
+            <li>Analyzed 650+ transcribed audio samples from the B-SHARP dataset across T-word, S-word, Animal, and Fruit fluency tasks; extracted classical features and LLM-derived semantic features.</li>
+            <li>Applied Mann-Whitney U and t-tests with FDR correction, Random Forest, and logistic regression to evaluate statistical significance and predictive performance.</li>
+            <li>Integrated Whisper v3, HuggingFace Transformers, GPT-4o, and scikit-learn into a unified pipeline for transcription, feature mining, and classification; led feature extraction, GPT-4o annotation, and error analysis.</li>
           </ul>
         </article>
 
         <article class="project-card">
           <div class="entry-meta">04/2025</div>
           <h3>MBTI Personality Prediction with BERT</h3>
-          <p class="muted">Independent research</p>
+          <p class="muted">Independent research - early exploration of inferring latent traits from text</p>
           <ul>
-            <li>Fine-tuned a sentence-level MBTI classifier on user-generated text with HuggingFace Transformers and PyTorch.</li>
-            <li>Explored inferring latent traits from language before later work on Bayesian belief distillation.</li>
+            <li>Designed and fine-tuned a sentence-level MBTI classification system on Kaggle user-generated text using HuggingFace Transformers and PyTorch.</li>
+            <li>This project was a precursor to later Bayesian belief-distillation work on inferring hidden mental states from dialogue. Code: <a href="https://github.com/kaneis1/Psy">github.com/kaneis1/Psy</a>.</li>
           </ul>
         </article>
       </div>
@@ -168,9 +174,9 @@
         <h2>Experience</h2>
       </div>
       <article class="entry">
-        <div class="entry-meta">Shanghai · 08/2023 - 11/2023</div>
+        <div class="entry-meta">Shanghai | 08/2023 - 11/2023</div>
         <h3>Computer Vision Intern, Bayer Cropscience China Co., Ltd.</h3>
-        <p>Adapted YOLOv5 for tomato detection and tracking in field imagery, improving small-object recall through anchor and augmentation tuning. Implemented and tested algorithm variants in Python for team ML pipelines.</p>
+        <p>Adapted YOLOv5 for tomato detection and tracking in field imagery; tuned anchors and augmentation to improve recall on small-object cases. Implemented and tested algorithm variants in Python, integrating them into the team's data and ML pipelines.</p>
       </article>
     </section>
 
