@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research CV website for Zongqi Cui, M.S. Computer Science student at Emory University.">
+  <title>Zongqi Cui | Research CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Zongqi Cui</a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="cv.pdf">CV PDF</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Research CV</p>
+        <h1>Zongqi Cui</h1>
+        <p class="summary">
+          M.S. Computer Science student at Emory University working on Bayesian cognitive modeling,
+          language models as approximations of human inference, theory of mind, and auditable reasoning systems.
+        </p>
+        <div class="contact-row" aria-label="Contact links">
+          <a href="mailto:zcui54@emory.edu">zcui54@emory.edu</a>
+          <span>Atlanta, GA</span>
+          <a href="https://github.com/kaneis1">github.com/kaneis1</a>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="cv.pdf">Download CV</a>
+          <a class="button secondary" href="#publications">View Publications</a>
+        </div>
+      </div>
+      <figure class="profile-frame">
+        <img src="assets/profile.jpg" alt="Portrait of Zongqi Cui">
+      </figure>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Focus</p>
+        <h2>Research Interests</h2>
+      </div>
+      <p class="lead">
+        Bayesian cognitive modeling and large language models as approximations of human inference;
+        theory of mind and intention attribution from dialogue; distillation of structured reasoning into
+        smaller, auditable models; calibration and interpretability of LLM-based agents.
+      </p>
+    </section>
+
+    <section id="education" class="section split">
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <article class="entry">
+          <div class="entry-meta">Atlanta, GA · 08/2024 - 05/2026</div>
+          <h3>Emory University</h3>
+          <p>M.S. in Computer Science</p>
+          <p>GPA: 3.64 / 4.0</p>
+          <p class="muted">Relevant coursework: Machine Learning, Natural Language Processing, Artificial Intelligence, Computer Vision, Spatial Computing, Deep Learning on Graphs, Algorithms, Python Programming, Data Mining.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-meta">Shanghai · 08/2020 - 06/2024</div>
+          <h3>University of Shanghai for Science &amp; Technology</h3>
+          <p>B.S. in Computer Science</p>
+          <p>GPA: 3.52 / 4.0 (86.69 / 100)</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Writing</p>
+        <h2>Publications &amp; Preprints</h2>
+      </div>
+      <article class="publication">
+        <h3>Distilling Bayesian Belief States into Language Models for Auditable Negotiation</h3>
+        <p>Cui, Z., Lin, B. Submitted to NeurIPS 2026, under review.</p>
+      </article>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Research Experience</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="entry-meta">11/2025 - 05/2026</div>
+          <h3>Bayesian Belief Distillation for Negotiation Agents</h3>
+          <p class="muted">Bytes of Minds Lab, Icahn School of Medicine at Mount Sinai · Advisor: Prof. Baihan Lin</p>
+          <ul>
+            <li>Designed a language-as-likelihood, Bayes-as-update framework for calibrated turn-level posteriors over hidden preferences in CaSiNo negotiation dialogues.</li>
+            <li>Distilled a Llama-3.3-70B Bayesian teacher into a Llama-3.1-8B LoRA student with auditable posterior, intent, content, and utterance outputs.</li>
+            <li>Established a same-scale supervised baseline exceeding prior CaSiNo SOTA under matched 5-fold cross validation.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="entry-meta">02/2026 - Present</div>
+          <h3>Bayesian Drug Efficacy Modeling and LLM-Based Explainability</h3>
+          <p class="muted">Industry-supervised research · SK Life Science</p>
+          <ul>
+            <li>Extended a Bayesian Drug Efficacy Model on 311K drug-cell-line pairs across 2,024 multi-omic features.</li>
+            <li>Engineered a Random Forest leaf-agreement perturbation kernel for drug-tumor similarity modeling.</li>
+            <li>Built a SHAP-to-LLM explainer that maps biomedical features to grounded natural-language IC50 explanations.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="entry-meta">09/2025 - 12/2025</div>
+          <h3>Modeling Human Strategic Behavior with Decision Transformers</h3>
+          <p class="muted">Bytes of Minds Lab, Icahn School of Medicine at Mount Sinai · Advisor: Prof. Baihan Lin</p>
+          <ul>
+            <li>Applied a Decision Transformer to predict cooperation behavior in the Iterated Prisoner's Dilemma.</li>
+            <li>Designed state-action-return representations and evaluated against Transformer and BERT baselines.</li>
+            <li>Used SHAP to interpret learned policies and identify dominant drivers of cooperation.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="entry-meta">03/2025 - 05/2025</div>
+          <h3>Graph-Augmented Multimodal Representation Learning with CLIP</h3>
+          <p class="muted">Independent research</p>
+          <ul>
+            <li>Built a relation-guided contrastive model combining CLIP features with graph neural networks.</li>
+            <li>Designed cross-modal and inter-node objectives for zero-shot node classification and link prediction.</li>
+            <li>Improved Hit@5 by about 30% over CLIP, DeCLIP, UniCL, SigLIP, and ImageBind baselines.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="entry-meta">02/2025 - 04/2025</div>
+          <h3>Detecting Mild Cognitive Impairment from Verbal Fluency</h3>
+          <p class="muted">Collaborative research</p>
+          <ul>
+            <li>Analyzed 650+ transcribed B-SHARP audio samples across verbal fluency tasks.</li>
+            <li>Combined classical lexical features with LLM-derived semantic features and statistical testing.</li>
+            <li>Integrated Whisper v3, HuggingFace Transformers, GPT-4o, and scikit-learn into a unified pipeline.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="entry-meta">04/2025</div>
+          <h3>MBTI Personality Prediction with BERT</h3>
+          <p class="muted">Independent research</p>
+          <ul>
+            <li>Fine-tuned a sentence-level MBTI classifier on user-generated text with HuggingFace Transformers and PyTorch.</li>
+            <li>Explored inferring latent traits from language before later work on Bayesian belief distillation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="section-heading">
+        <p class="eyebrow">Industry</p>
+        <h2>Experience</h2>
+      </div>
+      <article class="entry">
+        <div class="entry-meta">Shanghai · 08/2023 - 11/2023</div>
+        <h3>Computer Vision Intern, Bayer Cropscience China Co., Ltd.</h3>
+        <p>Adapted YOLOv5 for tomato detection and tracking in field imagery, improving small-object recall through anchor and augmentation tuning. Implemented and tested algorithm variants in Python for team ML pipelines.</p>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Tools</p>
+        <h2>Technical Skills</h2>
+      </div>
+      <div class="skill-list">
+        <p><strong>Programming:</strong> Python, PyTorch, HuggingFace Transformers, TRL, PEFT, scikit-learn, pandas, C++, SQL, LaTeX.</p>
+        <p><strong>ML &amp; Research:</strong> LoRA / QLoRA fine-tuning, knowledge distillation, Bayesian inference, calibration metrics, TreeSHAP, contrastive learning, prompting, structured-CoT evaluation.</p>
+        <p><strong>Infrastructure:</strong> HPC clusters, LSF / Slurm, Arion, Minerva, A100 / H100 training, GGUF export, Git, Overleaf.</p>
+        <p><strong>Languages:</strong> Mandarin native, English professional working proficiency.</p>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="section-heading">
+        <p class="eyebrow">Activities</p>
+        <h2>Honors &amp; Activities</h2>
+      </div>
+      <article class="entry">
+        <h3>Competitive Programming, ICPC / CCPC</h3>
+        <p>Six years on the University ACM team from 2018 to 2024, with 1,000+ problems solved across graphs, dynamic programming, string matching, and computational geometry.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Zongqi Cui</p>
+  </footer>
+</body>
+</html>
